@@ -1,7 +1,7 @@
 # .bash_profile - bash config file
 # From: Fergus Bremner
 # Email: <fergus.bremner@gmail.com>
-# Last Modified: 2013-01-26 05:44:36 EST
+# Last Modified: 2013-01-26 06:02:48 EST
 
 # Source bashrc
 if [ -f ~/.bash/bashrc ]; then
@@ -33,22 +33,22 @@ PATH=$PATH
 export PATH
 #BASH_ENV=$HOME/.bashrc
 #export BASH_ENV PATH
-#export ANDROID_SDK=/home/fergus/Projects/android/android-sdk/tools
 #export ANT_HOME=/usr/share/ant
 #export JAVA_HOME=/usr/share/java
 #export JDK_HOME=/usr/lib/jvm/java-6-sun
 #export JRE_HOME=/usr/lib/jvm/java-6-sun
-#export MAVEN_OPTS=-Xms256m -Xmx512m
 #export M2_HOME=/usr/share/maven2
 #export M2=$M2_HOME/bin
-export TERM=xterm-256color
-export EDITOR=vim
-export LC_CTYPE=en_US.UTF-8
-export HISTCONTROL=ignoredups
-export HISTCONTROL=ignoreboth
-export HISTSIZE=10000
-export TERM=xterm-256color
+#export MAVEN_OPTS=-Xms256m -Xmx512m
 export COLORFGBG="default;default" # for mutt
+export EDITOR=vim
+export GREP_OPTIONS="--color=auto" # grep colorize 
+export HISTCONTROL=ignoreboth
+export HISTCONTROL=ignoredups
+export HISTSIZE=10000
+export LC_CTYPE=en_US.UTF-8
+export PGHOST=/tmp # Postgres won't work without this
+export TERM=xterm-256color
 
 # OPTIONS
 shopt -s cdable_vars
