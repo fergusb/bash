@@ -1,7 +1,7 @@
 # .bash_profile - bash config file
 # From: Fergus Bremner
 # Email: <fergus.bremner@gmail.com>
-# Last Modified: 2013-01-26 05:36:53 EST
+# Last Modified: 2013-01-26 05:44:36 EST
 
 # Source bashrc
 if [ -f ~/.bash/bashrc ]; then
@@ -50,13 +50,13 @@ export HISTSIZE=10000
 export TERM=xterm-256color
 export COLORFGBG="default;default" # for mutt
 
-# Enable options:
+# OPTIONS
 shopt -s cdable_vars
 shopt -s cdspell
 shopt -s checkhash
 shopt -s checkwinsize
 shopt -s cmdhist
-shopt -s extglob        # Necessary for programmable completion.
+shopt -s extglob        # for programmable completion
 shopt -s histappend histreedit histverify
 shopt -s no_empty_cmd_completion
 shopt -s sourcepath

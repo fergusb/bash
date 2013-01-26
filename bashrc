@@ -1,7 +1,7 @@
 # .bashrc - bash config file
 # From: Fergus Bremner
 # Email: <fergus.bremner@gmail.com>
-# Last Modified: 2013-01-26 05:14:39 EST
+# Last Modified: 2013-01-26 05:43:30 EST
 
 # stop unwanted ssh/scp warnings
 if [ $(expr index "$-" i) -eq 0 ]; then
@@ -24,16 +24,13 @@ PS1='\[\e[0;34m\]\
 \n ' 
 case `id -u` in
       0) PS1="${PS1}# ";; # root
-      *) PS1="${PS1}> ";; # the rest
+      *) PS1="${PS1}> ";; # mortals
 esac
 
 #OPTIONS
 set -o notify
-set -o noclobber		# stop overwrite
+set -o noclobber  # stop overwrite
 
 #fortune
 
-# Local Variables:
-# mode:shell-script
-# sh-shell:bash
-# End:
+# vim:ft=sh
