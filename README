@@ -3,4 +3,6 @@ bash
 
 # Fergus' bash foo
 
+Now deprecated since switching to zsh
+
 " vim:ft=mkd
