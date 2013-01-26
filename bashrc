@@ -29,7 +29,7 @@ PS1='\[\e[0;34m\]\
 \n \#' 
 case `id -u` in
       0) PS1="${PS1}# ";; # root
-      *) PS1="${PS1}> ";; # mortals
+      *) PS1="${PS1}$ ";; # mortals
 esac
 
 #OPTIONS
