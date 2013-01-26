@@ -1,4 +1,4 @@
-# sourced by .bash_profile
+#!/usr/bin/env bash
 
 # handy calculator
 function calc () {

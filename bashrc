@@ -1,7 +1,9 @@
+#!/usr/bin/env bash
+
 # .bashrc - bash config file
 # From: Fergus Bremner
 # Email: <fergus.bremner@gmail.com>
-# Last Modified: 2013-01-26 02:38:10 CET
+# Last Modified: 2013-01-26 02:58:23 CET
 
 # if not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -33,6 +35,7 @@ esac
 #OPTIONS
 set -o notify
 set -o noclobber  # stop overwrite
+unset MAILCHECK  # don't check the mail
 
 # FUNCTIONS - kept in .bash/functions
 if [ -f "$HOME/.bash/functions" ]; then

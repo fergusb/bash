@@ -1,4 +1,4 @@
-# Bash Aliases (seriously)
+#!/usr/bin/env bash
 
 # Navigation
 alias .='pwd'

@@ -1,4 +1,6 @@
-# .bash_profile - bash config file
+#!/usr/bin/env bash
+
+# ~/.bash_profile or ~/.profile - bash config file
 # From: Fergus Bremner
 # Email: <fergus.bremner@gmail.com>
 # Last Modified: 2013-01-26 07:05:20 EST
