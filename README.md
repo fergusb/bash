@@ -1,4 +1,0 @@
-bash
-====
-
-Fergus' bash foo

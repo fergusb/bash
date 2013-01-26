@@ -1,0 +1,7 @@
+# sourced by .bash_profile
+
+# make dir and switch to it
+function mkcd {
+  mkdir -p $1
+  cd $1
+}
