@@ -1,7 +1,7 @@
 # .bashrc - bash config file
 # From: Fergus Bremner
 # Email: <fergus.bremner@gmail.com>
-# Last Modified: 2013-01-26 07:04:01 EST
+# Last Modified: 2013-01-26 02:38:10 CET
 
 # if not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -24,7 +24,7 @@ esac
 PS1='\[\e[0;34m\]\
 [\u@\h:\w]\
 \[\e[m\]\
-\n ' 
+\n \#' 
 case `id -u` in
       0) PS1="${PS1}# ";; # root
       *) PS1="${PS1}> ";; # mortals
