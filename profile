@@ -1,7 +1,7 @@
 # .bash_profile - bash config file
 # From: Fergus Bremner
 # Email: <fergus.bremner@gmail.com>
-# Last Modified: 2013-01-26 06:48:23 EST
+# Last Modified: 2013-01-26 07:05:20 EST
 
 # set PATH so it includes user bin if it exists
 if [ -d ~/bin ] ; then
@@ -41,9 +41,9 @@ shopt -s histappend histreedit histverify
 shopt -s no_empty_cmd_completion
 shopt -s sourcepath
 
-# Source bashrc
-if [ -f $HOME/.bash/bashrc ]; then
-	. $HOME/.bash/bashrc
+# source bashrc
+if [ -f "$HOME/.bash/bashrc" ]; then
+	. "$HOME/.bash/bashrc"
 fi
 
 # enable bash completion

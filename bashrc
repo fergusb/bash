@@ -1,7 +1,7 @@
 # .bashrc - bash config file
 # From: Fergus Bremner
 # Email: <fergus.bremner@gmail.com>
-# Last Modified: 2013-01-26 06:53:02 EST
+# Last Modified: 2013-01-26 07:04:01 EST
 
 # if not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -35,13 +35,13 @@ set -o notify
 set -o noclobber  # stop overwrite
 
 # FUNCTIONS - kept in .bash/functions
-if [ -f $HOME/.bash/functions ]; then
-    . $HOME/.bash/functions
+if [ -f "$HOME/.bash/functions" ]; then
+    . "$HOME/.bash/functions"
 fi
 
 # ALIASES - kept in .bash/aliases
-if [ -f $HOME/.bash/aliases ]; then
-    . $HOME/.bash/aliases
+if [ -f "$HOME/.bash/aliases" ]; then
+    . "$HOME/.bash/aliases"
 fi
 
 #fortune
