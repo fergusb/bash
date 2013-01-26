@@ -4,9 +4,6 @@
 alias .='pwd'
 alias ..='cd ..'
 
-# Search
-alias spot='mdfind -onlyin `pwd`'
-
 # List options
 alias l='ls'
 alias lf='ls -lqF'				# list with file type recognition chars
@@ -16,8 +13,8 @@ alias ll='ls -lag $* | more'	# view file(s)
 alias ls='ls -aF --color'
 
 # Prevent accidental clobbering of files
-#alias rm='rm -i'
-#alias cp='cp -i'
+alias rm='rm -i'
+alias cp='cp -i'
 alias mv='mv -i'
 
 # Admin
@@ -41,10 +38,7 @@ alias suspend='sudo pm-suspend'
 #alias sleep='sudo pm-suspend'
 
 # Applications and utilities
-#alias ack='ack-grep'
 alias apache2ctl='sudo /usr/sbin/apache2ctl'
-#alias apt-get='sudo apt-get'
-#alias cpan='sudo cpan'
 alias eclipse-php='/usr/local/bin/eclipse-php/eclipse'
 alias eclipse='/usr/local/bin/eclipse/eclipse'
 #alias gvim='gvim -p --remote-tab-silent'

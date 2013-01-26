@@ -1,27 +1,7 @@
 # .bash_profile - bash config file
 # From: Fergus Bremner
 # Email: <fergus.bremner@gmail.com>
-# Last Modified: 2013-01-26 06:02:48 EST
-
-# Source bashrc
-if [ -f ~/.bash/bashrc ]; then
-	. ~/.bash/bashrc
-fi
-
-# ALIASES - kept in .bash/aliases
-if [ -f ~/.bash/aliases ]; then
-    . ~/.bash/aliases
-fi
-
-# FUNCTIONS - kept in .bash/functions
-if [ -f ~/.bash/functions ]; then
-    . ~/.bash/functions
-fi
-
-# enable bash completion
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-    . /etc/bash_completion
-fi
+# Last Modified: 2013-01-26 06:48:23 EST
 
 # set PATH so it includes user bin if it exists
 if [ -d ~/bin ] ; then
@@ -60,6 +40,16 @@ shopt -s extglob        # for programmable completion
 shopt -s histappend histreedit histverify
 shopt -s no_empty_cmd_completion
 shopt -s sourcepath
+
+# Source bashrc
+if [ -f $HOME/.bash/bashrc ]; then
+	. $HOME/.bash/bashrc
+fi
+
+# enable bash completion
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    . /etc/bash_completion
+fi
 
 #fortune
 mesg y
